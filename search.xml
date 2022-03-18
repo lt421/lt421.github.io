@@ -2349,7 +2349,7 @@
       <link href="/2020/09/20/gitgub%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E9%A1%B9%E7%9B%AE/"/>
       <url>/2020/09/20/gitgub%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E9%A1%B9%E7%9B%AE/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#x31;&#57;&#56;&#x34;&#x34;&#x35;&#x37;&#x36;&#53;&#x39;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">&#x31;&#57;&#56;&#x34;&#x34;&#x35;&#x37;&#x36;&#53;&#x39;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#49;&#x39;&#x38;&#x34;&#x34;&#53;&#55;&#x36;&#53;&#57;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#49;&#x39;&#x38;&#x34;&#x34;&#53;&#55;&#x36;&#53;&#57;&#64;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
       
       
       <categories>
@@ -3015,6 +3015,17 @@
     
     
     <entry>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -3037,9 +3048,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>留言板</title>
+      <link href="/messageboard/index.html"/>
+      <url>/messageboard/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -3051,17 +3062,6 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>留言板</title>
-      <link href="/messageboard/index.html"/>
-      <url>/messageboard/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
