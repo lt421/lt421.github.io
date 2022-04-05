@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>复试赌命</title>
+      <link href="/article/41d3078d.html"/>
+      <url>/article/41d3078d.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p> <img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220320220818722.png"></p><p> 复试赌命，这**学校复试参考书都没有，只有收集一点然后赌命了。</p><p> 一个分类凑几道题</p><p> 参考文章：</p><p> <a href="https://blog.csdn.net/yinghui_yht/article/details/105443770">https://blog.csdn.net/yinghui_yht&#x2F;article&#x2F;details&#x2F;105443770</a></p><p> <a href="https://blog.csdn.net/weixin_40852935/article/details/104859524">https://blog.csdn.net/weixin_40852935&#x2F;article&#x2F;details&#x2F;104859524</a></p><p> <a href="https://www.cnblogs.com/xkf97/p/12742948.html">https://www.cnblogs.com/xkf97/p/12742948.html</a></p></blockquote><h2 id="一、数据库"><a href="#一、数据库" class="headerlink" title="一、数据库"></a>一、数据库</h2><h3 id="1、事务的四大特性"><a href="#1、事务的四大特性" class="headerlink" title="1、事务的四大特性"></a>1、事务的四大特性</h3><p>ACDI；<br>原子性：事务只能全部执行或者全部回滚。<br>一致性：事务执行前后数据库处于一致性的状态。<br>持久性：事务对数据库的操作对数据库数据的改变是永久性的。<br>隔离性：多个事务并发对数据库操作是隔离开的。</p><h3 id="2、事务隔离级别与脏读，幻读，不可重复读等"><a href="#2、事务隔离级别与脏读，幻读，不可重复读等" class="headerlink" title="2、事务隔离级别与脏读，幻读，不可重复读等"></a>2、事务隔离级别与脏读，幻读，不可重复读等</h3><p>脏读：事务A读取到未提交的数据（回滚的数据）<br>不可重复读：事务A读取两次数据，结果集不一样（事务B进行了数据修改）<br>幻读：事务A读取两次数据，结果集的数目不一样（如多或少了几条数据），事务B对数据进行了添加和删除</p><p>事务隔离级别（级别越高，并发性越低）：</p><p>read uncommit：读未提交<br>read commit：读已提交<br>repeatable read：可重复读<br>seizaltion：串行</p><p>Mysql默认级别：repeatable read,且使用一种xxxx技术解决幻读。</p><p>若开发需要高并发，将隔离级别设置为read uncommit，设置乐观锁&#x2F;悲观锁来解决。（追问就g）</p><h3 id="3、数据库范式"><a href="#3、数据库范式" class="headerlink" title="3、数据库范式"></a>3、数据库范式</h3><p>1NF：得是二维表（每一个表项都是不可分割的数据）<br>2NF：消除部分依赖（追问g）<br>3NF：消除传递依赖（追问g，那些什么候选键乱七八糟的看一次忘一次）</p><h3 id="4、索引"><a href="#4、索引" class="headerlink" title="4、索引"></a>4、索引</h3><p>索引可以加快查询的效率，但是降低其他操作的效率，因为每次插入删除或修改后需重新组织索引；</p><h3 id="5、Nosql"><a href="#5、Nosql" class="headerlink" title="5、Nosql"></a>5、Nosql</h3><p>key-value形式存储，如redis，特点为高性能，快。缺点为不能进行复杂查询。用于缓存热点数据或进行高并发开发。</p><h3 id="6、视图、触发器、存储过程、游标"><a href="#6、视图、触发器、存储过程、游标" class="headerlink" title="6、视图、触发器、存储过程、游标"></a>6、视图、触发器、存储过程、游标</h3><p>视图：把经常连接查询的表作为视图存储起来，方便使用。</p><p>触发器：满足某种条件时候执行触发器。</p><p>存储过程：写好具有特点功能的sql语句供上层函数调用。</p><p>游标：分别对每行元素处理的时候使用游标。</p><h3 id="7、sql语句"><a href="#7、sql语句" class="headerlink" title="7、sql语句"></a>7、sql语句</h3><p>太久没用，但是在开发中如果编写复杂的sql我会查阅之前记录的笔记，然后进行编写。</p><hr><h2 id="二、操作系统"><a href="#二、操作系统" class="headerlink" title="二、操作系统"></a>二、操作系统</h2><h3 id="1、操作系统四个特点"><a href="#1、操作系统四个特点" class="headerlink" title="1、操作系统四个特点"></a>1、操作系统四个特点</h3><ul><li>并发：操作系统中各个进程并发执行。</li><li>共享：操作系统并发执行的各个进程共享系统资源。</li><li>虚拟：物理实体映射为逻辑实体。</li><li>异步：各个进程以不可预知的速度，走走停停的推进。</li></ul><h3 id="2、操作系统主要功能"><a href="#2、操作系统主要功能" class="headerlink" title="2、操作系统主要功能"></a>2、操作系统主要功能</h3><ul><li><p>作为系统资源的管理者</p><ul><li>处理机管理</li><li>存储器管理</li><li>文件管理</li><li>设备管理</li></ul></li><li><p>作为向上提供接口</p><ul><li>GUI(图形界面)</li><li>系统调用</li><li>命令接口（联机&#x2F;脱机）</li></ul></li></ul><h3 id="3、进程与线程的区别"><a href="#3、进程与线程的区别" class="headerlink" title="3、进程与线程的区别"></a>3、进程与线程的区别</h3><p>进程：运行着的程序，由程序段，数据端，PCB三部分组成。</p><p>线程：轻量级的进程，进程中包含线程。</p><p>区别：<br>进程是资源分配的最小单位，线程是处理机调度的最小单位。<br>进程切换开销大，同一进程里的线程切换系统开销小。</p><h3 id="4、进程的状态"><a href="#4、进程的状态" class="headerlink" title="4、进程的状态"></a>4、进程的状态</h3><p>五状态模型：创建态，就绪态，运行态，阻塞态，终止态<br>七状态模型：内存空间不够需要换到外存，挂起态（阻塞挂起，就绪挂起）</p><h3 id="5、进程通信"><a href="#5、进程通信" class="headerlink" title="5、进程通信"></a>5、进程通信</h3><ul><li>管道通信</li><li>共享存储</li><li>消息传递</li></ul><h3 id="6、处理机调度的层次"><a href="#6、处理机调度的层次" class="headerlink" title="6、处理机调度的层次"></a>6、处理机调度的层次</h3><p>高级调度（作业调度）：作业中选择调入内存的作业<br>中级调度（内存调度）：将哪个挂起态的进程调入内存<br>低级调度（进程调度）：运行哪个就绪态的进程</p><h3 id="7、调度算法"><a href="#7、调度算法" class="headerlink" title="7、调度算法"></a>7、调度算法</h3><p>先来先服务<br>短作业优先<br>高响应比优先</p><p>时间片轮转<br>优先级<br>多级反馈队列</p><h3 id="8、死锁"><a href="#8、死锁" class="headerlink" title="8、死锁"></a>8、死锁</h3><p>死锁：各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进的现象</p><p>原因：信号量使用不当、进程推进的顺序不对。</p><p>必要条件：</p><ol><li>互斥条件：请求互斥资源。</li><li>请求和保持条件：拿到资源还可以请求资源。</li><li>非剥夺条件：已经分配的资源不能被剥夺</li><li>循环等待条件：系统中若干进程组成环路，该环路中每个进程都在等待相邻进程正占用的资源</li></ol><p>解决死锁：</p><ol><li>预防死锁：破坏必要条件</li><li>避免死锁：银行家算法</li><li>检测，解决死锁不会</li></ol><h3 id="9、页面置换算法"><a href="#9、页面置换算法" class="headerlink" title="9、页面置换算法"></a>9、页面置换算法</h3><p>1、最佳置换算法：每次选择淘汰的页面将是以后不再使用，或者在最长时间内不再被访问的页面（不知道后面要访问那个，理想状态）。</p><p>2、先进先出置换算法：每次淘汰的页面是最早进入内存的界面 。</p><p>3、最近最久未使用算法：每次淘汰的页面是最近最久未使用的页面。标志位T记录使用的时间</p><p>4、时钟置换算法（CLOCK）：（细问就g）</p><h3 id="10、虚拟内存"><a href="#10、虚拟内存" class="headerlink" title="10、虚拟内存"></a>10、虚拟内存</h3><p>结果：用户使用到的内存比实际内存大的多；</p><p>基于局部性原理，在程序装入时，可以将程序中很快会用到的部分装入内存，暂时用不到的部分留在外存，就可以让程序开始执行。允许一个作业分多次调入内存。</p><h3 id="11、分页与分段"><a href="#11、分页与分段" class="headerlink" title="11、分页与分段"></a>11、分页与分段</h3><p>页是信息的<strong>物理单位</strong>。分页的目的是为了实现离散分配，提高内存利用率。分页仅仅是系统管理上的需要，完全是系统行为，对用户是不可见的。</p><p>段是信息的<strong>逻辑单位</strong>。分段的目的是为了更好的满足用户的需求。一个段通常包含着一组逻辑模块的信息。分段对用户是可见的，用户编程时需要显式的给出段名</p><h3 id="12、磁盘调度算法"><a href="#12、磁盘调度算法" class="headerlink" title="12、磁盘调度算法"></a>12、磁盘调度算法</h3><p>1、先来先服务算法</p><p>2、最短寻找时间优先，找离磁盘头最近的</p><p>3、saca 算法：磁头移动到最外侧磁道的时候才能往内移动，移动到最内侧磁道的时候才能往外移动（电梯）</p><p>4、LOOK 调度算法：如果在磁 头移动方向上已经没有别的请求，就可以立即改变磁头移动方向</p><p>5、C-SCAN:</p><p>6、c-look</p><h3 id="14、i-x2F-o控制方式"><a href="#14、i-x2F-o控制方式" class="headerlink" title="14、i&#x2F;o控制方式"></a>14、i&#x2F;o控制方式</h3><ul><li>程序直接控制</li><li>中断</li><li>DMA</li><li>通道</li></ul><h3 id="15、Spooling技术"><a href="#15、Spooling技术" class="headerlink" title="15、Spooling技术"></a>15、Spooling技术</h3><p>假脱机技术，独占设备改为共享设备。输入井和输出井来模拟输入输出的磁带。</p><blockquote><p>就这些赌命吧</p></blockquote><hr><h2 id="三、计算机网络"><a href="#三、计算机网络" class="headerlink" title="三、计算机网络"></a>三、计算机网络</h2><h3 id="1、计算机网络的分层各层常见协议"><a href="#1、计算机网络的分层各层常见协议" class="headerlink" title="1、计算机网络的分层各层常见协议"></a>1、计算机网络的分层各层常见协议</h3><p>ois:物联网淑慧适用（物理层，数据链路层，网络层，传输层，会话层，表示层，应用层）。<br>tcp&#x2F;ip:网络接口层，网络层，传输层、应用层。<br>学习计网：物理层 数据链路层 网络层 传输层 应用层。</p><p>常见协议：<br>应用层：http ftp ssh dns fmtp..<br>传输层：tcp,ip<br>网络层：ip<br>数据链路层：ARP</p><h3 id="2、tcp三次握手与四次挥手"><a href="#2、tcp三次握手与四次挥手" class="headerlink" title="2、tcp三次握手与四次挥手"></a>2、tcp三次握手与四次挥手</h3><p><strong>根本原因：在不可靠的通信通道上建立可靠的连接</strong></p><p>握手：<br>client 发送 syn 请求到server,server 回复 syn ack,client再发送ack请求。</p><p>挥手：<br>client 发送 fin 请求到server，此时client不再发送数据，sever收到请求回复ack,此时server仍可以发送和处理数据，它处理完这些数据再给client发送fin请求，客户端收到后回复ack，server收到ack后立即断开连接，client经过2msl后断开连接</p><p><strong>为什么不是两次握手</strong><br>防止已失效的报文到达服务器端（比如是两次连接，client发送第一个syn请求由于某原因没有到达server，重新发送，server收到立马建立连接，过了会失效的那个到了，就又建立起一个连接，这样在client端是一个连接，在server端是两个连接就出错）</p><p><strong>为什么要等2msl</strong></p><p>确保最后一个ack server端收到，否则server端一直处于等待状态</p><p><strong>为什么四次挥手</strong></p><p>sever收到fin报文时还需要发送报文或者处理数据，不能立即断开连接</p><h3 id="3、TCP、UDP区别（何时使用TCP-何时使用UDP）"><a href="#3、TCP、UDP区别（何时使用TCP-何时使用UDP）" class="headerlink" title="3、TCP、UDP区别（何时使用TCP,何时使用UDP）"></a>3、TCP、UDP区别（何时使用TCP,何时使用UDP）</h3><ol><li>TCP面向连接，UDP无连接。</li><li>TCP可靠传输，不会发生顺序混乱，丢失这些情况。UDP不可靠</li><li>TCP一对一传输，UDPp可以一对一，一对多…</li><li>TCP传输基本单位是字节，UDP是数据报</li><li>UDP具有<strong>实时性和高效</strong>，如直播，视频通话等使用UDP</li></ol><h3 id="4、浏览器输入-www-baidu-com-发生了什么"><a href="#4、浏览器输入-www-baidu-com-发生了什么" class="headerlink" title="4、浏览器输入 www.baidu.com 发生了什么"></a>4、浏览器输入 <a href="http://www.baidu.com/">www.baidu.com</a> 发生了什么</h3><ol><li>DNS解析，首先会查本地的缓存有没有存储域名对应的ip地址，若没有则向DNS服务器发送请求获取域名对应的ip地址</li><li>得到ip地址后，三次握手建立tcp连接（https基于tcp）</li><li>get请求，http报文 -&gt; 加首部 tcp报文 -&gt; 加首部 ip报文 -&gt; 加首部尾部称为数据帧 -&gt; 比特流转为电信号 传输。</li><li>结果路由器跳转，不断修改帧的Mac地址到目标主机又拆数据报，然后相同的方式响应请求。</li></ol><h3 id="5、TCP流量控制与拥塞控制"><a href="#5、TCP流量控制与拥塞控制" class="headerlink" title="5、TCP流量控制与拥塞控制"></a>5、TCP流量控制与拥塞控制</h3><p>流量控制：接收方 -&gt; 发送方 慢点（端到端）， 流量控制只让发送方的发送速率不要太快，流量控制是使用<strong>滑动窗口</strong>来实现的。<br>拥塞控制：拥塞控制考虑整个网络，是全局性的考虑。可以通过慢启动算法，<strong>拥塞窗口</strong>实现</p><h3 id="6、HTTPS"><a href="#6、HTTPS" class="headerlink" title="6、HTTPS"></a>6、HTTPS</h3><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220322152017408.png"></p><hr><h2 id="四、计算机组成原理"><a href="#四、计算机组成原理" class="headerlink" title="四、计算机组成原理"></a>四、计算机组成原理</h2><blockquote><p>机组基本上就没学过，哎</p></blockquote><h3 id="1、冯诺依曼结构的特点"><a href="#1、冯诺依曼结构的特点" class="headerlink" title="1、冯诺依曼结构的特点"></a>1、冯诺依曼结构的特点</h3><ol><li>计算机由<strong>运算器</strong>，<strong>控制器</strong>，<strong>存储器</strong>，<strong>输入输出设备</strong>五部分组成</li><li>指令和数据以同等地位存储在存储器中，按地址访问</li><li>数据均用二进制表示</li></ol><h3 id="2、编译和解释的区别"><a href="#2、编译和解释的区别" class="headerlink" title="2、编译和解释的区别"></a>2、编译和解释的区别</h3><p>都是翻译的方式<br>编译：将源代码转化成<strong>目标文件</strong>，然后执行<br>解释：<strong>边翻译边执行</strong>，无目标文件</p><h3 id="3、机器字长、指令字长、存储字长区别"><a href="#3、机器字长、指令字长、存储字长区别" class="headerlink" title="3、机器字长、指令字长、存储字长区别"></a>3、机器字长、指令字长、存储字长区别</h3><p>机器字长：计算机可直接处理的二进制数据位数<br>指令字长：一个指令字包含的二进制代码位数<br>存储字长：一个存储单元存储的二进制代码长度</p><h3 id="4、CPI，MIPS"><a href="#4、CPI，MIPS" class="headerlink" title="4、CPI，MIPS"></a>4、CPI，MIPS</h3><p>CPI：执行一条指令所需时钟周期数<br>MIPS：每秒多少百万条指令&#x3D;主频&#x2F;CPI</p><h3 id="5、计算机中为什么采用二进制表示数据"><a href="#5、计算机中为什么采用二进制表示数据" class="headerlink" title="5、计算机中为什么采用二进制表示数据"></a>5、计算机中为什么采用二进制表示数据</h3><p>1、实现简单，可以电子元件高电位表示1，低电位表示0这样</p><p>2、二进制运算法则少，运算简单，有利于简化计算机硬件结构</p><h3 id="6、CISC和RISC的区别"><a href="#6、CISC和RISC的区别" class="headerlink" title="6、CISC和RISC的区别"></a>6、CISC和RISC的区别</h3><p>CISC复杂指令集，RISC是精简指令集。</p><h3 id="7、cache的作用"><a href="#7、cache的作用" class="headerlink" title="7、cache的作用"></a>7、cache的作用</h3><p>连接cpu和内存</p><h2 id="五、软件工程"><a href="#五、软件工程" class="headerlink" title="五、软件工程"></a>五、软件工程</h2><p><a href="http://taoblog421.cn/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">http://taoblog421.cn/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</a></p><h2 id="六、数据结构与算法"><a href="#六、数据结构与算法" class="headerlink" title="六、数据结构与算法"></a>六、数据结构与算法</h2><p><a href="http://taoblog421.cn/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">http://taoblog421.cn/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</a></p><h2 id="七、计算机前沿"><a href="#七、计算机前沿" class="headerlink" title="七、计算机前沿"></a>七、计算机前沿</h2><h3 id="1、人工智能、机器学习、深度学习"><a href="#1、人工智能、机器学习、深度学习" class="headerlink" title="1、人工智能、机器学习、深度学习"></a>1、人工智能、机器学习、深度学习</h3><blockquote><p>一、发展史</p><p>1、 1950年 图灵测试  问问题判断是否是真人<br>2、 1956年 “达特芬斯会议”  提出人工智能的词汇  “机器能否向人一样思考”<br>3、 1997 IBM 深蓝 </p><p>二、梯度下降算法 </p><p>三、神经网络</p><p>神经元：多输入，单输出（0,1）</p><p>M-P模型</p><p>四、人工智能框架</p><p>1、谷歌 Tensorflow ，微软，Facebook，…</p><p>2、华为 mindSpore </p></blockquote><h3 id="2、卷积神经网络"><a href="#2、卷积神经网络" class="headerlink" title="2、卷积神经网络"></a>2、卷积神经网络</h3><blockquote><p>一、视觉原理</p><p>1、 1981 猫 实验</p><ul><li>简单细胞：线条</li><li>复杂细胞：运动</li></ul><p>2、神经认知模型：几层皮层</p><p>像素点 - 边缘，方向 - 轮廓，细节 - 判断</p><p>3、杨立坤 - 卷积神经网络</p><p>卷积：数学方法提取图片特征 </p></blockquote><h3 id="3、…"><a href="#3、…" class="headerlink" title="3、…"></a>3、…</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+          <category> 计算机基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的考研经验</title>
+      <link href="/article/bc1a085d.html"/>
+      <url>/article/bc1a085d.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="成都信息工程大学软件工程上岸经验帖"><a href="#成都信息工程大学软件工程上岸经验帖" class="headerlink" title="成都信息工程大学软件工程上岸经验帖"></a>成都信息工程大学软件工程上岸经验帖</h1><blockquote><p>对于我个人而言，觉得经验贴这个玩意参考价值不大，因为<strong>人与人的个体差异可能比人与猪的还要大</strong>。但是也有人按照经验贴按部就班实现了自己的研究生梦。趁着对考研还有印象，以及在候车室候车没啥事干，也写一篇经验贴供大家参考吧。</p></blockquote><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220405140612894.png" style="zoom:67%;" /><h2 id="自我定位于院校选择"><a href="#自我定位于院校选择" class="headerlink" title="自我定位于院校选择"></a>自我定位于院校选择</h2><p>有句话说<strong>考研成功与否选择大于努力</strong>，很认同这句话。决定考研的人也是20+岁的人了，应该是对自己有着较为准确的定位（也有部分头铁冲清华北大当炮灰），不是否定不畏艰险的拼搏精神，只是大部分人都是普通人，平凡人。早点接受这个现实没什么不好。将自己定位为混子，不如就考本校或者双非院校，双非研究生也是研究生。将自己定位为可以静下心好好学，年如一日，不被各种事情干扰的卷王，就可以冲个985，211。</p><hr><h2 id="数学复习"><a href="#数学复习" class="headerlink" title="数学复习"></a>数学复习</h2><p>数学自然是痛苦，对于一个数二考了70分的人没什么资格写经验贴，只有写写<strong>反向经验</strong>贴了。回首我的数学学习经历，高一上的数学就是难度的极限了，以后就难的做不来题了，更不用说高数这玩意有多痛苦。而且，真的有必要这么难吗？如袁腾飞老师所说，<em>我们的学生学着全宇宙最难的数理化，也不见在拿过多少自然科学的诺贝尔奖，高中生的数学水平去美国都可以当数学老师</em>。但是<strong>优质教育的稀缺</strong>，只能通过考试这一种<strong>相对公平的方法来选拔人才</strong>，特殊国情还能咋办呢，总比抽签去读研究生好，那是西藏找转世灵童。</p><p>所以数学就硬着头皮学吧，我是全程看汤老师的课，自己的这点水平实在不敢对各位老师加以评论。然后做真题如果遇到不会的题就算了吧，有些题就是为考清华北大的同学设置的。</p><hr><h2 id="英语复习"><a href="#英语复习" class="headerlink" title="英语复习"></a>英语复习</h2><p>对于我这个专业（软件工程），英语还是很重要的。个人本身也对英语不怎么排斥，英语就考的还行，英一66分。英语还是比较看基础感觉，因为有一起备考的研友的例子。核心就是<strong>背单词</strong>吧，然后看看网课什么的。全球化趋势下学好英语必不可少，此外还可以学好英语润出国什么，当然这些都是后话了。</p><p>此外，我好朋友英语高分经验贴可供学习：<a href="http://hexo.lstf666.cn/2022/03/28/ying-er-83-fen-tu-xie-zheng-li-qian-zi-chang-wen/">http://hexo.lstf666.cn/2022/03/28/ying-er-83-fen-tu-xie-zheng-li-qian-zi-chang-wen/</a></p><hr><h2 id="政治复习"><a href="#政治复习" class="headerlink" title="政治复习"></a>政治复习</h2><p>写这一块内容就要谨言慎行了，最<strong>伟大光荣永远正确</strong>的学科，可惜我学的时候都是反着理解的。最终取得58的成绩，虽然不是很高，但是已经很满意了。对我来说最终的分数不是最重要，而是过程中学到不少<strong>额外的知识</strong>。就这样吧，<strong>谨言慎行</strong>。要知道<strong>研究生招生准则第一条就是拥护中国共产党的领导</strong>。</p><p>此外，我好朋友的政治高分经验贴可供学习：<a href="http://hexo.lstf666.cn/2022/03/28/he-nan-zheng-zhi-79-jing-yan-tie/">http://hexo.lstf666.cn/2022/03/28/he-nan-zheng-zhi-79-jing-yan-tie/</a></p><hr><h2 id="专业课复习"><a href="#专业课复习" class="headerlink" title="专业课复习"></a>专业课复习</h2><p>本校的专业课是今年才变的，由C语言变为软件工程导论。这一块我还比较行，取得了115的成绩。对于这门专业课的学习，其实就是大学许多课程的浓缩，比如UML统一建模语言，软件设计工程，软件制造工程，软件测试，工程实践等。对于本校考试优势较大。以前上课都没有认真听过这些课，现在有过一定软件开发的基础上，再次学习一遍，更加融会贯通。也是比较实用的一门课。</p><p>经验就是<strong>啃书</strong>吧，多理解，多背。</p><hr><h2 id="复试"><a href="#复试" class="headerlink" title="复试"></a>复试</h2><p>3月31号刚刚结束了研究生复试，复试前两周绝对是我人生中最焦虑的两个月。复试完又要马上进行毕设的中期检查，<strong>每天都在痛苦和焦虑中度过</strong>。但谁又能知道，复试远远没有想象的那么可怕。而且<strong>我准备的内容，80％都没问到</strong>，全靠以前的基础就答过去了。英语问题里边没听懂，就听到一个单词就背了一段相关的上去。专业课也回答的不是很好，可能是对自己要求太高哈哈。本来还计划是在纸上理清思路在作答，直接慌张的张口就来。复试更多细节也不易说，反正远没有想象的艰难。</p><p>再过一段时间更新个复试的详细经验贴供报考本校的同学来参考。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂七杂八 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>6、编码与测试</title>
       <link href="/article/26734cb9.html"/>
       <url>/article/26734cb9.html</url>
@@ -1760,7 +1812,7 @@
       <link href="/article/8f610a4b.html"/>
       <url>/article/8f610a4b.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#x31;&#x39;&#56;&#52;&#52;&#x35;&#55;&#54;&#53;&#57;&#64;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#x31;&#x39;&#56;&#52;&#52;&#x35;&#55;&#54;&#53;&#57;&#64;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#49;&#57;&#56;&#52;&#x34;&#x35;&#55;&#x36;&#x35;&#x39;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#49;&#57;&#56;&#52;&#x34;&#x35;&#55;&#x36;&#x35;&#x39;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
       
       
       <categories>
@@ -2372,17 +2424,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
@@ -2394,9 +2435,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -2408,6 +2449,17 @@
       <title>留言板</title>
       <link href="/messageboard/index.html"/>
       <url>/messageboard/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
