@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>[开源项目]藤枝学院</title>
+      <link href="/article/14b39195.html"/>
+      <url>/article/14b39195.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>藤枝学院（本人本科毕设）源码分享及部署说明</p><p><a href="http://taoblog421.cn/article/916f8bd4.html">藤枝学院系统说明文档</a></p></blockquote><h2 id="一、技术栈"><a href="#一、技术栈" class="headerlink" title="一、技术栈"></a>一、技术栈</h2><p>BS架构、前后端分离开发</p><p><strong>主要技术栈：</strong></p><p>后端：Springboot、MybatisPlus、MySQL</p><p>前端：Vue、Element-ui、Bootstrap</p><h2 id="二、运行说明"><a href="#二、运行说明" class="headerlink" title="二、运行说明"></a>二、运行说明</h2><p><strong>项目源码获取见文章末尾</strong></p><blockquote><p>根据上次的开发经验，微服务的划分不恰当导致代码组织很烂，代码中含有大量的重复代码，且运行复杂需启动一堆东西。所以此次的项目直接使用单体架构</p></blockquote><h3 id="导入serious-sql并修改配置文件"><a href="#导入serious-sql并修改配置文件" class="headerlink" title="导入serious.sql并修改配置文件"></a>导入serious.sql并修改配置文件</h3><p>在MySQL中导入sql文件，并修改<strong>application.properties</strong>中数据库相关配置</p><h3 id="启动Redis"><a href="#启动Redis" class="headerlink" title="启动Redis"></a>启动Redis</h3><p>redis仅仅用于存储短信验证码<br>安装并启动即可<br><a href="https://redis.io/">https://redis.io/</a></p><h3 id="一些需要修改的配置"><a href="#一些需要修改的配置" class="headerlink" title="一些需要修改的配置"></a>一些需要修改的配置</h3><h4 id="阿里云短信"><a href="#阿里云短信" class="headerlink" title="阿里云短信"></a>阿里云短信</h4><p>配置位置为<strong>SmsServiceImpl.java</strong>33行将<strong>accessKey</strong>和<strong>secret</strong>换为自己的即可</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220706225511236.png"></p><h4 id="阿里云OSS"><a href="#阿里云OSS" class="headerlink" title="阿里云OSS"></a>阿里云OSS</h4><p><strong>application.properties</strong>中配置</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220706225554105.png"></p><h4 id="支付宝支付"><a href="#支付宝支付" class="headerlink" title="支付宝支付"></a>支付宝支付</h4><p>修改AlipayConfig.java</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220706231304588.png"></p><h3 id="启动后端"><a href="#启动后端" class="headerlink" title="启动后端"></a>启动后端</h3><p>后端代码文件夹为<strong>serious</strong></p><p><strong>注意lib下面那个支付宝的包需手动导入下</strong>（方法为右键然后Add as library）</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220706224513885.png" alt="image-20220706224513885"></p><h3 id="启动前端"><a href="#启动前端" class="headerlink" title="启动前端"></a>启动前端</h3><p>前端代码文件夹为<strong>serious_userfront</strong>，<strong>vue-admin-template</strong>分别为<strong>用户前台</strong>前端和<strong>管理员后台</strong>前端。</p><p>启动命令分别为</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure><h2 id="三、项目演示"><a href="#三、项目演示" class="headerlink" title="三、项目演示"></a>三、项目演示</h2><p><a href="https://www.bilibili.com/video/BV1Y44y1G7SJ">https://www.bilibili.com/video/BV1Y44y1G7SJ</a></p><blockquote><p>开发不易，求渴望一瓶肥宅快乐水。</p></blockquote><img src="https://i.loli.net/2021/05/22/EeJiuKLg6o24dr7.png" style="zoom: 25%;" /><blockquote><p>源码：蓝奏云：<a href="https://wwz.lanzoub.com/b00vulxne">https://wwz.lanzoub.com/b00vulxne</a> 密码:a5ok</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开源项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开源项目 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>藤枝学院系统说明文档</title>
       <link href="/article/916f8bd4.html"/>
       <url>/article/916f8bd4.html</url>
@@ -1831,7 +1856,7 @@
       <link href="/article/8f610a4b.html"/>
       <url>/article/8f610a4b.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#x31;&#x39;&#x38;&#x34;&#x34;&#x35;&#x37;&#54;&#53;&#x39;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#x31;&#x39;&#x38;&#x34;&#x34;&#x35;&#x37;&#54;&#53;&#x39;&#x40;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>摘要：</p><p>之前将完成的一些项目保存在本地，一是分享的时候需要打包再发送，二是怕重装系统什么的搞没了，虽然都是小项目，但还是花费了不少的时间编写，还是有必要把项目托管到github上。（ps:据说前几个月github把一批代码埋到了北极，保存1000年，<a href="https://archiveprogram.github.com/">详情</a>，要是之前上传过还可以吹一波什么emmmm…）</p></blockquote><span id="more"></span><p>1、进入gethub首页，点击 New repository 新建一个项目 <img src="https://i.loli.net/2020/09/20/qF1phYw6I25nWtB.png" alt="image-20200920134308245"></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Repository</span> <span class="string">name : 项目名</span></span><br><span class="line"><span class="attr">Description</span> : <span class="string">项目描述</span></span><br><span class="line"><span class="attr">Public/Private</span>:<span class="string">所有可见/指定人可见</span></span><br><span class="line"><span class="attr">Add</span> <span class="string">a README file : 在项目里自动添加readme.md文件</span></span><br><span class="line"><span class="attr">gitignore</span>: <span class="string">创建一个gitigore文件用于存放git忽略的文件，如maven的target目录，.idea目录等</span></span><br><span class="line"><span class="attr">license</span>: <span class="string">开源许可证，这玩意分类挺多，选MIT协议就行，它允许别人用你的代码做任何事情，但必须保证你的所有权，并且你无须承担代码使用产生的风险，参考自 https://zhuanlan.zhihu.com/p/51331026</span></span><br></pre></td></tr></table></figure><p>完成输入选择后点击Create repository 2、点击Code获取到一个地址，复制它备用 <img src="https://i.loli.net/2020/09/20/2UrhIAdNxOGC4eT.png" alt="image-20200920134437245"> 3、本地操作，需下载git工具 <a href="https://git-for-windows.github.io/">下载链接</a>，没有梯子会比较慢，附上一个<a href="https://git-for-windows.github.io/">蓝奏云链接</a> 找到你的项目，点击右键 <img src="https://i.loli.net/2020/09/20/CuDs8ndMRi39eNI.png" alt="image-20200920134902547"> 弹出操作框 将前面复制到的地址拿过来 git clone <a href="https://github.com/liaotao421/-.git">https://github.com/liaotao421/-.git</a> 这时发现问文件目录多了一个文件夹，文件夹名就是github上的项目名 将项目复制到这个文件内（我的项目名莫名其妙变成了-…） cd 项目名 &#x2F;&#x2F;进入项目文件夹 配置git上的用户名和邮箱 git cinfig –global user.name “liaotao421” git cinfig –global user.email <a href="mailto:&#49;&#57;&#56;&#x34;&#52;&#x35;&#55;&#54;&#53;&#57;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;">&#49;&#57;&#56;&#x34;&#52;&#x35;&#55;&#54;&#53;&#57;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;</a> 依次输入 git add .&#x2F;&#x2F;注意点之前的空格! git commit -m “first commit” git push -u orgin master git push -u origin master &#x2F;&#x2F;此时弹出登录框登录 刷新发现项目已经成功上传 <img src="https://i.loli.net/2020/09/20/3uBVsteUFiSYkXR.png" alt="image-20200920140645978"></p>]]></content>
       
       
       <categories>
@@ -2443,17 +2468,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友情链接</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -2465,9 +2479,9 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="/messageboard/index.html"/>
-      <url>/messageboard/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -2479,6 +2493,17 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="/messageboard/index.html"/>
+      <url>/messageboard/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
