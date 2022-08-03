@@ -453,22 +453,22 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h4 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h4><hr><p>诸葛亮诫子书愿共勉：</p><blockquote><p>“<em><strong>夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！</strong></em>“<br><br></p></blockquote><p>个人信息：</p><p>双非研一SE学生。<br>博客大部分内容为学习笔记自查自用，少量原创内容。<br>爱好杂而不精，端游（现在只打LOL了），魔方，乒乓球，看书，爬山……</p><h4 id="博客信息"><a href="#博客信息" class="headerlink" title="博客信息"></a>博客信息</h4><hr><ul><li>网站采用的<a href="http://github.com/ppoffice/hexo-theme-icarus">Icarus主题</a> </li><li>在<a href="https://removeif.github.io/">原作者项目</a>基础上修改配置而成</li><li>原站点<a href="http://blog.tao421.xyz/">blog.tao421.xyz</a>欢迎访问</li><li>采用<a href="https://butterfly.js.org/">Butterfly主题</a>重建博客</li></ul><p><em><strong>更新日志：</strong></em><br>–<em>2020.11.24：完成博客迁移，可以继续记录学习内容</em><br>–<em>2020.11.25：在<a href="https://removeif.github.io/">项目</a>基础下进行修改配置建立新站点</em><br>–<em>2020.11.24：域名需要开始备案，原站点不能访问，wordpress太慢，准备弃坑</em><br>–<em>2022.3.18：更换主题</em></p><br><h4 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h4><p><strong>2022计划</strong></p><hr><blockquote><p><strong>2022-GOALS</strong>              </p><ul><li><input checked="" disabled="" type="checkbox"> 成为本校研究生</li><li><input disabled="" type="checkbox"> 看20本书</li><li><input disabled="" type="checkbox"> 英语六级刷分</li><li><input disabled="" type="checkbox"> 赚钱，争取经济独立</li><li><input disabled="" type="checkbox"> 减肥</li></ul></blockquote><p><strong>2021计划</strong></p><hr><blockquote><p><strong>2021-GOALS</strong><br>更新于202.3.18</p><ul><li><input checked="" disabled="" type="checkbox"> 考研通过初试</li><li><input disabled="" type="checkbox"> 买的专业书看一遍（java编程思想,深入理解计算机系统…）</li><li><input disabled="" type="checkbox"> 有空继续看剩下的几部武侠小说（雪山飞狐、碧血剑….）</li><li><input disabled="" type="checkbox"> 魔方别彻底丢了</li><li><input disabled="" type="checkbox"> 写100篇博客（灌水，技术，瞎折腾…）</li></ul><p><strong>额外：</strong></p><ul><li><input checked="" disabled="" type="checkbox"> 经常看Youtube视频，历史尤其中国近代史知识，政治知识增加</li><li><input checked="" disabled="" type="checkbox"> 解锁成就“看穿生死”，“不再焦虑”</li><li><input checked="" disabled="" type="checkbox"> 看了不少经典粤语电影</li></ul><p><strong>总结：</strong></p><ul><li>考研上岸了一半，其他是都没有完成</li><li>再接再厉</li></ul></blockquote><!-- **2019计划**---2018.12.31/21:59:00->更新于2019.12.31>**2019-GOALS**>+ [x] 购买的专业书籍至少看完一遍（并发、重构、设计模式...）-> 95%> **额外：**>+ [x] 追了很多剧> **总结：**>+ 有优点有缺点，没坚持下来的还是太多，追了太多剧。以后多学习，多思考！<br> -->]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h4 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h4><hr><p>诸葛亮诫子书愿共勉：</p><blockquote><p>“<em><strong>夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！</strong></em>“<br><br></p></blockquote><p>个人信息：</p><p>双非研一SE学生。<br>博客大部分内容为学习笔记自查自用，少量原创内容。<br>爱好杂而不精，端游（现在只打LOL了），魔方，乒乓球，看书，爬山……</p><h4 id="博客信息"><a href="#博客信息" class="headerlink" title="博客信息"></a>博客信息</h4><hr><ul><li>网站采用的<a href="http://github.com/ppoffice/hexo-theme-icarus">Icarus主题</a> </li><li>在<a href="https://removeif.github.io/">原作者项目</a>基础上修改配置而成</li><li>原站点<a href="http://blog.tao421.xyz/">blog.tao421.xyz</a>欢迎访问</li><li>采用<a href="https://butterfly.js.org/">Butterfly主题</a>重建博客</li></ul><p><em><strong>更新日志：</strong></em><br>–<em>2020.11.24：完成博客迁移，可以继续记录学习内容</em><br>–<em>2020.11.25：在<a href="https://removeif.github.io/">项目</a>基础下进行修改配置建立新站点</em><br>–<em>2020.11.24：域名需要开始备案，原站点不能访问，wordpress太慢，准备弃坑</em><br>–<em>2022.3.18：更换主题</em></p><br><h4 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h4><p><strong>2022计划</strong></p><hr><blockquote><p><strong>2022-GOALS</strong>              </p><ul><li><input checked="" disabled="" type="checkbox"> 成为本校研究生</li><li><input disabled="" type="checkbox"> 看20本书</li><li><input disabled="" type="checkbox"> 英语六级刷分</li><li><input disabled="" type="checkbox"> 赚钱，争取经济独立</li><li><input disabled="" type="checkbox"> 减肥</li></ul></blockquote><p><strong>2021计划</strong></p><hr><blockquote><p><strong>2021-GOALS</strong><br>更新于202.3.18</p><ul><li><input checked="" disabled="" type="checkbox"> 考研通过初试</li><li><input disabled="" type="checkbox"> 买的专业书看一遍（java编程思想,深入理解计算机系统…）</li><li><input disabled="" type="checkbox"> 有空继续看剩下的几部武侠小说（雪山飞狐、碧血剑….）</li><li><input disabled="" type="checkbox"> 魔方别彻底丢了</li><li><input disabled="" type="checkbox"> 写100篇博客（灌水，技术，瞎折腾…）</li></ul><p><strong>额外：</strong></p><ul><li><input checked="" disabled="" type="checkbox"> 经常看Youtube视频，历史尤其中国近代史知识，政治知识增加</li><li><input checked="" disabled="" type="checkbox"> 解锁成就“看穿生死”，“不再焦虑”</li><li><input checked="" disabled="" type="checkbox"> 看了不少经典粤语电影</li></ul><p><strong>总结：</strong></p><ul><li>考研上岸了一半，其他是都没有完成</li><li>再接再厉</li></ul></blockquote><!-- **2019计划**---2018.12.31/21:59:00->更新于2019.12.31>**2019-GOALS**>+ [x] 购买的专业书籍至少看完一遍（并发、重构、设计模式...）-> 95%> **额外：**>+ [x] 追了很多剧> **总结：**>+ 有优点有缺点，没坚持下来的还是太多，追了太多剧。以后多学习，多思考！<br> -->]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
