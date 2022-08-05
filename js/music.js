@@ -61,7 +61,7 @@ var lastVideoIndex;
 $.getJSON("../json_data/video.json", function (data) {
     $('#video-list').append("");
     for (var i = 0; i < data.length; i++) {
-        var $li = $("<blockquote>"+(i+1)+"." + data[i].desc + "</blockquote>");
+        var $li = $("<li style='list-style-type: none; height: 40px; color: rgb(136, 136, 136);text-align: center;'>"+ data[i].desc + "</li>");
         $li.attr('id', i);
         $li.click(function (event) {
             var id = Number(this.id);

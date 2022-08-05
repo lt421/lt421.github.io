@@ -486,22 +486,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/media/index.html"/>
       <url>/media/index.html</url>
       
-        <content type="html"><![CDATA[<div class="music-container">    <div class="music-player">        <div class="d-title">                <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐        </div>        <br/>    </div>    <div id="musicarea">        <div class="music"></div>        <p id="p_message"><span id="music_story_message" class="span_animation"></span></p>        <br/>        <ul id="musiclist"></ul>        <br/>        <div id="desc"></div>    </div></div><script type="text/javascript"src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="stylesheet" href="/css/meplayer.min.css"/><script type="text/javascript" defer src="/js/meplayer.js"></script><script type="text/javascript" defer src="/js/music.js"></script><br/><link rel="stylesheet" href="/css/DPlayer.min.css"/><br/><br/><div class="video-player">    <div class="d-title">        <i class="fa fa-video-camera"></i>&nbsp;&nbsp;看看视频    </div>    <br/>    <p class="hits">->点击以下条目开始播放视频,向下滑动查看更多<-</p>    <div id="video-list"></div>    <br/>    <div id="dplayer"><br/></div></div><script src="/js/DPlayer.min.js"></script>]]></content>
+        <content type="html"><![CDATA[<!-- <div class="music-container">    <div class="music-player">        <div class="d-title">                <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐        </div>        <br/>    </div>    <div id="musicarea">        <div class="music"></div>        <p id="p_message"><span id="music_story_message" class="span_animation"></span></p>        <br/>        <ul id="musiclist"></ul>        <br/>        <div id="desc"></div>    </div></div> --><script type="text/javascript"src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="stylesheet" href="/css/meplayer.min.css"/><script type="text/javascript" defer src="/js/meplayer.js"></script><script type="text/javascript" defer src="/js/music.js"></script><!-- <br/> --><link rel="stylesheet" href="/css/DPlayer.min.css"/><!-- <br/><br/> --><div class="video-player">    <div class="d-title">        <i class="fa fa-video-camera"></i>&nbsp;&nbsp;看看视频（点击视频名播放）    </div>    <br/>    <div>        <div id="dplayer"><br/></div>        <div id="video-list"></div>    </div></div><script src="/js/DPlayer.min.js"></script><style>    @media screen and (max-width: 600px) {        #video-list {            margin-top:25px;            overflow: auto;            height: 390px;        }    }    @media screen and (min-width: 600px) {        #dplayer {            float: left;width: 78%;        }        #video-list {            overflow: auto;            height: 390px;        }    }    /* @media screen and (min-width:600x){        #dplayer {            float: left;width: 78%;        }        #video-list {            overflow: auto;            height: 390px;        }    } */</style>]]></content>
       
     </entry>
     
@@ -511,6 +500,17 @@
       <title>留言板</title>
       <link href="/messageboard/index.html"/>
       <url>/messageboard/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
