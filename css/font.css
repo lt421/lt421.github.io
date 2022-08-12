@@ -1,0 +1,52 @@
+/*以下是本地字体引入*/
+@font-face {
+    font-family :  'JetBrains Mono' ;    /*字体名称*/
+    src : url('../fonts/webfonts/JetBrainsMono-Medium.woff2');/*字体资源*/
+}
+@font-face {
+    font-family: 'ZCOOLKuaiLe';
+    src: url('../fonts/ZCOOLKuaiLe-Regular.ttf');
+}
+
+body {
+    font-family: "ZCOOLKuaiLe";
+}
+
+article {
+    font-size: 16px;
+}
+
+#nav{
+    font-size: 1.8em;
+}
+
+#article-container p {
+    margin: 0 0 0 0;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.58;
+    text-indent: 2em;
+}
+
+ul {
+    margin: 0px 0px 0px 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin: 0 0 10px;
+    color: var(--text-highlight-color);
+    font-weight: bold;
+}
+
+hr {
+    margin: 25px auto;
+}
+
+#recent-posts > .recent-post-item {
+    height: 16em;
+}
+
+#vcomment {
+    font-size: 1.3em;
+}

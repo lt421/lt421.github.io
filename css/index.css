@@ -179,10 +179,6 @@ template {
   display: none
 }
 
-p
-  {
-    text-indent:2em
-  }
 .limit-one-line,
 #article-container .flink .flink-item-name,
 #article-container .flink .flink-item-desc,
