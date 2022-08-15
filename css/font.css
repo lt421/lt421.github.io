@@ -1,11 +1,6 @@
-/*以下是本地字体引入*/
-@font-face {
-    font-family :  'JetBrains Mono' ;    /*字体名称*/
-    src : url('../fonts/webfonts/JetBrainsMono-Medium.woff2');/*字体资源*/
-}
 @font-face {
     font-family: 'ZCOOLKuaiLe';
-    src: url('../fonts/ZCOOLKuaiLe-Regular.ttf');
+    src: url('https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/129c0b5e587e4333bca4d2f4435074b1ZCOOLKuaiLe-Regular.ttf');
 }
 
 body {
