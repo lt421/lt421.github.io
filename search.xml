@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>成为“科技羊”</title>
+      <link href="/article/be9bc095.html"/>
+      <url>/article/be9bc095.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="成为科技羊"><a href="#成为科技羊" class="headerlink" title="成为科技羊"></a>成为科技羊</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/0D1828C5.gif" alt="img" style="zoom:30%;" />前言</h2><p>最近，想必大家和我一样羊了个羊折磨许久。凭借其变态的难度激起胜负欲和分享获取游戏道具在各个微信群大肆传播。后来有不少人解读这游戏的目的就是通过广告来获取收益，以及第二关是否通过是个概率问题，在此不做深究。本文的目的是让大家和我一样成为“科技羊”（使用“游戏外挂”通过第二关）</p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918102320720.png" alt="image-20220918102320720" style="zoom:80%;" /><h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/0D1828C5.gif" alt="img" style="zoom:30%;" />前置准备</h2><ul><li>PC端微信，版本为v3.4.5.27，可<a href="https://423down.lanzouo.com/iCGBcxdtt4d">点击下载</a></li><li>抓包工具Fiddler，链接：<a href="https://pan.baidu.com/s/1rrh9WNpHr_JL56T_jcjYMw?pwd=wat8">https://pan.baidu.com/s/1rrh9WNpHr_JL56T_jcjYMw?pwd=wat8</a> 提取码：wat8</li><li>代码编辑器，vscode，notpad++都可，实在没有记事本也可</li></ul><h2 id="成为科技羊-1"><a href="#成为科技羊-1" class="headerlink" title="成为科技羊"></a><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/0D1828C5.gif" alt="img" style="zoom:30%;" />成为科技羊</h2><p>运行fiddler，点击<code>工具-&gt;选项-&gt;HTTPS</code></p><p>按下图进行设置，设置完成后点击<code>操作-&gt;信任根证书</code>，弹出框中点yes还是ok就行</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918103145900.png"></p><p>运行PC端微信（最好用v3.4.5.27版本）的羊了个羊，同时观察fiddler抓包的结果。</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918111053301.png"></p><p>注意这两个请求，第一个请求是第一关的地图，id为80001。第二个请求为当天关卡的地图，今天是9.18就是90018</p><p>根据这个朋友的指点修改即可</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918111315397.png"></p><p>点击fiddler<code>规则-&gt;自定义规则</code></p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918111413052.png"></p><p>在这个位置复制如下代码</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918111523875.png"></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (oSession.<span class="property">url</span>==<span class="string">&quot;cat-match.easygame2021.com/sheep/v1/game/map_info_new?map_id=90018&quot;</span>) &#123;</span><br><span class="line">           oSession.<span class="property">url</span> = <span class="string">&quot;cat-match.easygame2021.com/sheep/v1/game/map_info_new?map_id=80001&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>保存后重新启动养了个羊，这时候的第二关和第一关一样简单，拼手速点点点就行</p><p><img src="https://edu-cubeonline.oss-cn-chengdu.aliyuncs.com/image-20220918111827444.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IT </category>
+          
+          <category> 杂七杂八 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo切换字体和部分样式优化</title>
       <link href="/article/38bcc82d.html"/>
       <url>/article/38bcc82d.html</url>
